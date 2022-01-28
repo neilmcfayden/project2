@@ -1,0 +1,45 @@
+@import './components/crypto-details';
+
+body{
+        .hero {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+                .hero-overlay{
+                    color: #fff;
+                    padding: 30px;
+                    color: orangered;
+                        .home {
+                            color: black;
+                            font-size: 35px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+          }
+          }
+        }
+  
+  .site-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('https://media.istockphoto.com/illustrations/three-diagonal-digital-chains-on-a-blue-background-blockchain-and-illustration-id1096888822?k=20&m=1096888822&s=612x612&w=0&h=uc7RBRA1hrNW0kjuN7HlVnIt0U6DTF7ZkKd8tK7WZtk=');
+    background-size: cover;
+    background-position: center;
+}
+  .error{
+    text-align: center;
+  }
+.h-100 {
+    background-color: #1572A1;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+}
+#button {
+    background-color: #1572A1;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 8px;
+}
