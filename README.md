@@ -1,20 +1,29 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
+# 📈 Crypto Updates 📉 
+- Created by [Ali Ali](https://github.com/alibeniaminali) and [Neil Mcfayden](https://github.com/Spurs129)
+- Follow the link  👉 [Crypto Updates](https://crypto-updates-aliali-neilmcfayden.netlify.app/) 👈
 
-## Using NPM
+## Overview 
+- A React app build during a 48 hours hackathon. My first pair project for General Assembly's Software Engineering Immersive Course
 
-`npm run start` or `npm run dev`  to run the development server
+## Installation Steps
+Clone or download the repository , then run the following in terminal :
+- First run : **yarn**
+- After installing run : **yarn start** 
 
-`npm run build` to create a build directory
+## Technologies Used
 
-## Using Yarn
+### API :
+- [Coincap API](https://docs.coincap.io/)
 
-`yarn start` or `yarn dev`  to run the development server
+### Frontend
+- React.js
+- React Bootstrap 
+- React Router DOM
+- Axios
+### Development Tools
+- VS Code
+- Insomnia
+- Netlify
 
-`yarn build` to create a build directory
-
-### ⚠️
-
-To prevent the `failed-to-compile` issue for linter errors like `no-unsed-vars`, rename the `.env.example` to `.env` and restart your development server. Note this will only change the behaviour of certain linter errors to now be warnings, and is added just to allow your code to compile in development. These errors should still be fixed and other errors will still result in the code being unable to compile
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## Author info
+- LinkedIn - [Ali Ali](https://www.linkedin.com/in/alibeniaminali/)
