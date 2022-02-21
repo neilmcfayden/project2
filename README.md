@@ -78,7 +78,10 @@ Clone or download the repository , then run the following in terminal :
 - It was my first time pair coding on any project and I learnt a lot about collaborating, communcating and planning.
 - First time doing a hackathon-style project and working under time pressure.
 
+
+
 ## Future wish list 
+ ##### Because we chose a faulty API we spend a lof of time to figure out how to fix the error and how to always have a successful axios request ,our website is quite simple. I am happy with the results but here are the things I would improve or add if we had more time :
 - Adding a Login and Register options where user can create an account and save their favourite crypto currencies and access them faster at any time
 - Add more content and visuals to keep the users engaged 
 
