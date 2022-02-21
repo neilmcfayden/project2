@@ -48,8 +48,16 @@ Clone or download the repository , then run the following in terminal :
 - <img width="869" alt="Screenshot 2022-02-21 at 17 36 08" src="https://user-images.githubusercontent.com/94930059/155003796-ea817e6c-6450-432d-8902-7d153e14096e.png">
 - <img width="869" alt="Screenshot 2022-02-21 at 17 36 32" src="https://user-images.githubusercontent.com/94930059/155003862-d8ec6481-ce24-4d86-b439-5ffed0952979.png">
 
+#### Challenges for day 1
+- Toward the end of Day 1 we realised that the API that we chose was faulty and we had to find a way to fix it or eventually look for another API and test it again which was time consuming and we had only 48 hours to finalise our project.
+- The issue was that after a few requests the API was sending us the error below. To get the information needed the users had to refresh the page multiple times until the information is received, which probably would lead the users to leave our website.
+- ![Screenshot 2022-02-21 at 17 53 38](https://user-images.githubusercontent.com/94930059/155006037-cfe96a9a-536b-4612-8376-a686a9e7253a.png)
+- We wrote this function in case our get request is not successful, to run up to 10 attempts and until we get the information.
+- <img width="785" alt="Screenshot 2022-02-21 at 18 11 51" src="https://user-images.githubusercontent.com/94930059/155007911-c4567252-5a75-470a-8e08-5dd55965cd40.png">
+- <img width="822" alt="Screenshot 2022-02-21 at 17 50 15" src="https://user-images.githubusercontent.com/94930059/155007923-ab38e05e-5103-4f2f-86dd-e3744baf33e7.png">
 
-
+### Day 2 :
+- After fixing the issue with our API we started looking into how to display and fit single crypto information into separate cards.
 
 ## Author info
 - LinkedIn - [Ali Ali](https://www.linkedin.com/in/alibeniaminali/)
