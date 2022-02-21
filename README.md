@@ -49,7 +49,6 @@ Clone or download the repository , then run the following in terminal :
 - <img width="869" alt="Screenshot 2022-02-21 at 17 36 32" src="https://user-images.githubusercontent.com/94930059/155003862-d8ec6481-ce24-4d86-b439-5ffed0952979.png">
 
 #### Challenges for day 1
-- When we request a certain information from the API, like for example the price, current market cap or supply, we werea huge long number which we had to cut down and add commas in o
 - Toward the end of Day 1 we realised that the API that we chose was faulty and we had to find a way to fix it or eventually look for another API and test it again which was time consuming and we had only 48 hours to finalise our project.
 - The issue was that after a few requests the API was sending us the error below. To get the information needed the users had to refresh the page multiple times until the information is received, which probably would lead the users to leave our website.
 - ![Screenshot 2022-02-21 at 17 53 38](https://user-images.githubusercontent.com/94930059/155006037-cfe96a9a-536b-4612-8376-a686a9e7253a.png)
@@ -63,17 +62,25 @@ Clone or download the repository , then run the following in terminal :
 - <img width="1190" alt="Screenshot 2022-02-21 at 18 35 12" src="https://user-images.githubusercontent.com/94930059/155010498-1fd77724-af41-4d06-8f02-d35468ee9c6b.png">
 - After having all the currencies displayed separately on our page we moved to getting single crypto currency and display it in a card. We had to use the same if statement in order to fulfil our get request without any issues.
 - <img width="1190" alt="Screenshot 2022-02-21 at 18 38 12" src="https://user-images.githubusercontent.com/94930059/155010831-37cf56c8-6dc4-4265-aa8a-c62e62f53bad.png">
-- Our API did not have lots of information or any kind of logos to display so we had to make the most of it and style a bit in order not to look too empty and boring.
+- Our API did not have lots of information or any kind of logos to display so we had to make the most of it and style a bit in order not to look too empty or boring.
 
-#### Challenges for day 1
-- When we request a certain information from the API, like for example the price, current market cap or supply, we were receiving a huge long number which we had to round and add commas in order be more understandable. After some Google-ing we found the following (function below) that helped us display our large numbers properly.
+#### Challenges for day 2
+- When we request a certain information from the API, like for example the price, current market cap or supply, we were receiving a huge long number which we had to round and add commas in order be more understandable.
+- After some Google-ing we found the following (function below) that helped us display our large numbers properly.
 - <img width="451" alt="Screenshot 2022-02-21 at 18 51 36" src="https://user-images.githubusercontent.com/94930059/155012238-4fd27ebf-2e42-4f32-a8d8-565b8b1bcc02.png">
 - We then used .toFixed() method that formats a number using fixed-point notation.
 - <img width="896" alt="Screenshot 2022-02-21 at 18 55 10" src="https://user-images.githubusercontent.com/94930059/155012587-6ab56061-d9a8-4c02-931d-01db9d356dcf.png">
 - We applied some styling using React Bootstrap to all the pages and made our website mobile friendly.
 - ![Screenshot 2022-02-21 at 18 59 35](https://user-images.githubusercontent.com/94930059/155013022-55eff287-7b14-4cf2-9ff1-547bf49785b1.png)
 
+## Wins 
+- Learnt to use React for the first time to build an app from scratch and to set up an application with multiple components.
+- It was my first time pair coding on any project and I learnt a lot about collaborating, communcating and planning.
+- First time doing a hackathon-style project and working under time pressure.
 
+## Future wish list 
+- Adding a Login and Register options where user can create an account and save their favourite crypto currencies and access them faster at any time
+- Add more content and visuals to keep the users engaged 
 
 
 ## Author info
