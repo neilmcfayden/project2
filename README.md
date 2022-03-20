@@ -3,7 +3,7 @@
 - I deployed this website on Netlify and it is available here 👉 [Crypto Updates](https://crypto-updates-aliali-neilmcfayden.netlify.app/) 👈
 
 ## Overview 
-- A React app build during a 48 hours hackathon. My first pair project for General Assembly's Software Engineering Immersive Course.
+- A React app built during a 48 hours hackathon. My first pair project for General Assembly's Software Engineering Immersive Course.
 - Crypto Updates is a website that requests the top 100 crypto currencies from Coincap API and users can see detailed live updates of the selected currency.
 
 ## Project Brief :
@@ -50,7 +50,7 @@ Clone or download the repository , then run the following in terminal :
 
 #### Challenges for day 1
 - Toward the end of Day 1 we realised that the API that we chose was faulty and we had to find a way to fix it or eventually look for another API and test it again which was time consuming and we had only 48 hours to finalise our project.
-- The issue was that after a few requests the API was sending us the error below. To get the information needed the users had to refresh the page multiple times until the information is received, which probably would lead the users to leave our website.
+- The issue was that after a few requests the API was sending us the error below. To get the information needed the users had to refresh the page multiple times until the information was received, which probably would lead the users to leave our website.
 - ![Screenshot 2022-02-21 at 17 53 38](https://user-images.githubusercontent.com/94930059/155006037-cfe96a9a-536b-4612-8376-a686a9e7253a.png)
 - We wrote this function in case our get request is not successful, to run up to 10 attempts and until we get the information.
 - <img width="785" alt="Screenshot 2022-02-21 at 18 11 51" src="https://user-images.githubusercontent.com/94930059/155007911-c4567252-5a75-470a-8e08-5dd55965cd40.png">
@@ -60,28 +60,28 @@ Clone or download the repository , then run the following in terminal :
 - After fixing the issue with our API we started looking into how to display all available currencies and how to fit single crypto information into separate cards.
 - We used array method to map through all the currencies and create separate containers for each crypto and display their Name and Symbol depending on their Id.
 - <img width="1190" alt="Screenshot 2022-02-21 at 18 35 12" src="https://user-images.githubusercontent.com/94930059/155010498-1fd77724-af41-4d06-8f02-d35468ee9c6b.png">
-- After having all the currencies displayed separately on our page we moved to getting single crypto currency and display it in a card. We had to use the same if statement in order to fulfil our get request without any issues.
+- After having all the currencies displayed separately on our page we moved to getting a single crypto currency and displaying it in a card. We had to use the same if statement in order to fulfil our get request without any issues.
 - <img width="1190" alt="Screenshot 2022-02-21 at 18 38 12" src="https://user-images.githubusercontent.com/94930059/155010831-37cf56c8-6dc4-4265-aa8a-c62e62f53bad.png">
 - Our API did not have lots of information or any kind of logos to display so we had to make the most of it and style a bit in order not to look too empty or boring.
 
 #### Challenges for day 2
-- When we request a certain information from the API, like for example the price, current market cap or supply, we were receiving a huge long number which we had to round and add commas in order be more understandable.
+- When we request a certain information from the API, like for example the price, current market cap or supply, we were receiving a huge long number which we had to round and add commas in order to be more understandable.
 - After some Google-ing we found the following (function below) that helped us display our large numbers properly.
 - <img width="451" alt="Screenshot 2022-02-21 at 18 51 36" src="https://user-images.githubusercontent.com/94930059/155012238-4fd27ebf-2e42-4f32-a8d8-565b8b1bcc02.png">
-- We then used .toFixed() method that formats a number using fixed-point notation.
+- We then used the .toFixed() method that formats a number using fixed-point notation.
 - <img width="896" alt="Screenshot 2022-02-21 at 18 55 10" src="https://user-images.githubusercontent.com/94930059/155012587-6ab56061-d9a8-4c02-931d-01db9d356dcf.png">
 - We applied some styling using React Bootstrap to all the pages and made our website mobile friendly.
 - ![Screenshot 2022-02-21 at 18 59 35](https://user-images.githubusercontent.com/94930059/155013022-55eff287-7b14-4cf2-9ff1-547bf49785b1.png)
 
 ## Wins 
-- Learnt to use React for the first time to build an app from scratch and to set up an application with multiple components.
-- It was my first time pair coding on any project and I learnt a lot about collaborating, communcating and planning.
+- Learned to use React for the first time to build an app from scratch and to set up an application with multiple components.
+- It was my first time pair coding on any project and I learnt a lot about collaborating, communicating and planning.
 - First time doing a hackathon-style project and working under time pressure.
 
 
 
 ## Future wish list 
- ##### Because we chose a faulty API we spend a lof of time to figure out how to fix the error and how to always have a successful axios request ,our website is quite simple. I am happy with the results but here are the things I would improve or add if we had more time :
+ ##### Because we chose a faulty API we spend a lot of time trying to figure out how to fix the error and how to always have a successful axios request ,our website is quite simple. I am happy with the results but here are the things I would improve or add if we had more time :
 - Adding a Login and Register options where user can create an account and save their favourite crypto currencies and access them faster at any time
 - Add more content and visuals to keep the users engaged 
 
