@@ -6,6 +6,8 @@
 - A React app built during a 48 hours hackathon. My first pair project for General Assembly's Software Engineering Immersive Course.
 - Crypto Updates is a website that requests the top 100 crypto currencies from Coincap API and users can see detailed live updates of the selected currency.
 
+![App Screenshot](https://i.imgur.com/48laWP8.png)
+
 ## Project Brief :
 - 48 hours to build a React application that consumes a public API.
 - Include wireframes that we designed before building the app.
