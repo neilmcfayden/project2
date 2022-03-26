@@ -1,3 +1,5 @@
+<a id="idtext"></a>
+
 # 📈 Crypto Updates 📉 
 - Developed by [Ali Ali](https://github.com/alibeniaminali) and [Neil Mcfayden](https://github.com/Spurs129)
 - I deployed this website on Netlify and it is available here 👉 [Crypto Updates](https://crypto-updates-aliali-neilmcfayden.netlify.app/) 👈
@@ -58,6 +60,8 @@ Clone or download the repository , then run the following in terminal :
 - <img width="785" alt="Screenshot 2022-02-21 at 18 11 51" src="https://user-images.githubusercontent.com/94930059/155007911-c4567252-5a75-470a-8e08-5dd55965cd40.png">
 - <img width="822" alt="Screenshot 2022-02-21 at 17 50 15" src="https://user-images.githubusercontent.com/94930059/155007923-ab38e05e-5103-4f2f-86dd-e3744baf33e7.png">
 
+[Back to the top ⬆️](#idtext)
+
 ### Day 2 :
 - After fixing the issue with our API we started looking into how to display all available currencies and how to fit single crypto information into separate cards.
 - We used array method to map through all the currencies and create separate containers for each crypto and display their Name and Symbol depending on their Id.
@@ -75,18 +79,19 @@ Clone or download the repository , then run the following in terminal :
 - We applied some styling using React Bootstrap to all the pages and made our website mobile friendly.
 - ![Screenshot 2022-02-21 at 18 59 35](https://user-images.githubusercontent.com/94930059/155013022-55eff287-7b14-4cf2-9ff1-547bf49785b1.png)
 
+[Back to the top ⬆️](#idtext)
+
 ## Wins 
 - Learned to use React for the first time to build an app from scratch and to set up an application with multiple components.
 - It was my first time pair coding on any project and I learnt a lot about collaborating, communicating and planning.
 - First time doing a hackathon-style project and working under time pressure.
-
-
 
 ## Future wish list 
  ##### Because we chose a faulty API we spend a lot of time trying to figure out how to fix the error and how to always have a successful axios request ,our website is quite simple. I am happy with the results but here are the things I would improve or add if we had more time :
 - Adding a Login and Register options where user can create an account and save their favourite crypto currencies and access them faster at any time
 - Add more content and visuals to keep the users engaged 
 
-
 ## Author info
 - LinkedIn - [Ali Ali](https://www.linkedin.com/in/alibeniaminali/)
+
+[Back to the top ⬆️](#idtext)
