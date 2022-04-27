@@ -1,100 +1,101 @@
-<a id="idtext"></a>
+# Crypto Updates
 
-# 📈 Crypto Updates 📉 
-- Developed by [Ali Ali](https://github.com/alibeniaminali) and [Neil Mcfayden](https://github.com/Spurs129)
-- I deployed this website on Netlify and it is available here 👉 [Crypto Updates](https://crypto-updates-aliali-neilmcfayden.netlify.app/) 👈
+### Overview
 
-## Overview 
-- A React app built during a 48 hours hackathon. My first pair project for General Assembly's Software Engineering Immersive Course.
-- Crypto Updates is a website that requests the top 100 crypto currencies from Coincap API and users can see detailed live updates of the selected currency.
+This is a pair coded project built with Ali Ali built during a 48 hour hackathon, during week 6 of our General assembly course. The brief was to build a front-end app using React, which accessed information from an external API using Axios requests.
 
-![App Screenshot](https://i.imgur.com/48laWP8.png)
+Myself and Ali decided to build an app that shows live price updates of the 100 most popular crypto currencies. 
 
-## Project Brief :
-- 48 hours to build a React application that consumes a public API.
-- Include wireframes that we designed before building the app.
-- Be deployed online and accessible to the public.
-- A working request in Insomnia from the API we want to use, showing that we can access the dataset we need.
 
-## Installation Steps
-Clone or download the repository, then run the following in terminal :
-- First run : **yarn**
-- After installing run : **yarn start** 
+### Deployment Link
 
-## Technologies Used
+https://crypto-updates-aliali-neilmcfayden.netlify.app/
 
-### API :
-- [Coincap API](https://docs.coincap.io/)
 
-### Frontend
-- React.js
-- React Bootstrap 
-- React Router DOM
-- Axios
-### Development Tools
-- VS Code
-- Insomnia
-- Netlify
+### Technologies Used
 
-## General Approach and Planning 
+HTML5, React.js, React Bootstrap, React Router Dom, Axios, VS Code, Insomnia, Netlify, External API: Coincap API
 
-- We first had to choose an API we wanted to use. My partner and I realised we both have interest in crypto currency so we decided to search for an API that gives us information about top crypto currency and we found [Coincap API](https://docs.coincap.io/).
 
-### Day 1 :
-- We tested if the API worked and what kind of information it provided 
-- ![Screenshot 2022-02-21 at 17 39 24](https://user-images.githubusercontent.com/94930059/155004341-2a46a43d-623b-4fc4-a605-0bf02df43ec6.png)
-- We began to chat about the idea and create a wireframe of our app design and components, given the limited time we had.
-- We decided what kind of information we wanted to display on our website and how we could access it using Insomnia
-- We saved time by scaffolding a basic React app from a template.
-- We then built our file structure as below.
-- <img width="287" alt="Screenshot 2022-02-21 at 18 41 35" src="https://user-images.githubusercontent.com/94930059/155011209-7d3d029c-3dd7-4c15-96e1-c417d4d0b96c.png">
-- Next, we used react-router-dom to set up our App.js as the router for the site.
-- <img width="869" alt="Screenshot 2022-02-21 at 17 36 08" src="https://user-images.githubusercontent.com/94930059/155003796-ea817e6c-6450-432d-8902-7d153e14096e.png">
-- <img width="869" alt="Screenshot 2022-02-21 at 17 36 32" src="https://user-images.githubusercontent.com/94930059/155003862-d8ec6481-ce24-4d86-b439-5ffed0952979.png">
+### Building the Crypto Updates App 
 
-#### Challenges for day 1
-- Toward the end of Day 1, we realised that the API that we chose was faulty and we had to find a way to fix it or eventually look for another API and test it again which was time consuming and we had only 48 hours to finalise our project.
-- The issue was that after a few requests the API was sending us the error below. To get the information needed the users had to refresh the page multiple times until the information was received, which probably would lead the users to leave our website.
-- ![Screenshot 2022-02-21 at 17 53 38](https://user-images.githubusercontent.com/94930059/155006037-cfe96a9a-536b-4612-8376-a686a9e7253a.png)
-- We wrote this function in case our get request was not successful, to run up to 10 attempts and until we get the information.
-- <img width="785" alt="Screenshot 2022-02-21 at 18 11 51" src="https://user-images.githubusercontent.com/94930059/155007911-c4567252-5a75-470a-8e08-5dd55965cd40.png">
-- <img width="822" alt="Screenshot 2022-02-21 at 17 50 15" src="https://user-images.githubusercontent.com/94930059/155007923-ab38e05e-5103-4f2f-86dd-e3744baf33e7.png">
+After brainstorming different ideas, including a sports app, we decided to investigate the crypto currency API’s and found CoinCap. CoinCap displays live price information and the latest trade information such as pricing trends and volume traded. Below is what we could access through the API when sending an Insomnia request for bitcoin. 
 
-[Back to the top ⬆️](#idtext)
 
-### Day 2 :
-- After fixing the issue with our API, we started looking into how to display all available currencies and how to fit single crypto information into separate cards.
-- We used array method to map through all the currencies and create separate containers for each crypto and display their Name and Symbol depending on their Id.
-- <img width="1190" alt="Screenshot 2022-02-21 at 18 35 12" src="https://user-images.githubusercontent.com/94930059/155010498-1fd77724-af41-4d06-8f02-d35468ee9c6b.png">
-- After having all the currencies displayed separately on our page, we moved into getting a single crypto currency and displaying it in a card. We had to use the same if statement in order to fulfil our get request without any issues.
-- <img width="1190" alt="Screenshot 2022-02-21 at 18 38 12" src="https://user-images.githubusercontent.com/94930059/155010831-37cf56c8-6dc4-4265-aa8a-c62e62f53bad.png">
-- Our API did not have a lot of information or any kind of logos to display so we decided to make the most of it and style it to make it look appealing and interesting.
+![alt text](/assets/project1-1.png)
 
-#### Challenges for day 2
-- When we request a certain information from the API, like for example the price, current market cap or supply, we were receiving a huge long number which we had to round and add commas in order to be more understandable.
-- After some Google-ing, we found the following (function below) that helped us display our large numbers properly.
-- <img width="451" alt="Screenshot 2022-02-21 at 18 51 36" src="https://user-images.githubusercontent.com/94930059/155012238-4fd27ebf-2e42-4f32-a8d8-565b8b1bcc02.png">
-- We then used the .toFixed() method that formats a number using fixed-point notation.
-- <img width="896" alt="Screenshot 2022-02-21 at 18 55 10" src="https://user-images.githubusercontent.com/94930059/155012587-6ab56061-d9a8-4c02-931d-01db9d356dcf.png">
-- We applied some styling using React Bootstrap to all the pages and made our website mobile friendly.
-- ![Screenshot 2022-02-21 at 18 59 35](https://user-images.githubusercontent.com/94930059/155013022-55eff287-7b14-4cf2-9ff1-547bf49785b1.png)
 
-[Back to the top ⬆️](#idtext)
+We decided to go with the API as we had a clear idea of what we wanted to do in the limited time we had. We made a basic wireframe outlining the pages we needed, and then began building the app. 
 
-## Wins 
-- Learned to use React for the first time to build an app from scratch and to set up an application with multiple components.
-- It was my first time pair coding on any project and I learnt a lot about collaborating, communicating and planning.
-- First time doing a hackathon-style project and working under time pressure.
+We used a basic background image for the homepage using a simple navigation bar. We then had 2 further pages. Crypto index page lists all 100 cryptocurrencies with a clickable link to each cryptocurrency. 
 
-## Future wish list 
- ##### Because we chose a faulty API, we spent a lot of time trying to figure out how to fix the error and how to always have a successful axios request, our website is quite simple. I am happy with the results but here are the things I would improve or add if we had more time :
-- Adding a Login and Register options where user can create an account and save their favourite crypto currencies and access them faster at any time
-- Add more content and visuals to keep the users engaged 
+This link would then open to our crypto details page which would show the information for each crypto currency pulled from the API. 
 
-## Author info
-- LinkedIn - [Ali Ali](https://www.linkedin.com/in/alibeniaminali/)
-- Email - alibeniaminali@gmail.com
 
-[Back to the top ⬆️](#idtext)
+![alt text](/assets/project2-2.png)
+
+
+So our main app consisted of 3 routes paths using React. 
+
+
+![alt text](/assets/project2-3.png)
+
+
+### Axios requests to the API
+
+We used React UseState to store the information from our Axios requests. We used async await to store the information once it arrived. 
+
+We had to use data.data to go dig down one further level into the API to access the data we wanted. This is because the data was stored in an object inside or an array that was nested inside of an object. 
+
+
+![alt text](/assets/project2-5.png)
+
+
+We decided to use the JavaScript setInterval feature to make our app update prices every 30 minutes. This could be easily altered to provide more up-to-date pricing. 
+
+
+![alt text](/assets/project2-6.png)
+
+
+### Bugs and Challenges
+
+
+CoinCap API turned out to be unreliable/ intermittent. We therefore had to build in a for loop to make the Axios request up to 10 times, so that if the request broke it would try again. You can see this in the code above. This was a hack to get the API working for us in the limited time that we had to build the App. 
+
+We made the Axios request to retrieve price information every 30 minutes using Set Interval. This can be altered easily to get more regular price updates. 
+
+
+![alt text](/assets/project2-7.png)
+
+
+One interesting improvement we made was improving the readability of very large numbers for the total market cap and total supply of each currency. We wanted to display these numbers with commas to make them more readable, however, the API did not provide the numbers with commas.
+
+We were able to import the function below, from a Google search, which insert commas into numbers. Again, this was a quick fix given the limited time we had. We were able to use this function with market cap, max supply and current supply. The function is below. This improves the readability and user experience for our site. 
+
+
+![alt text](/assets/project2-8.png)
+
+
+The numbersWithCommas function was then inserted into our crypto details page, as seen below, to deal with the large numbers. This was our completed code for the crypto details page. 
+
+
+![alt text](/assets/project2-9.png)
+
+
+The card for bitcoin is displayed below. The large numbers are now separated by commas. We believe this improved the user experience for our site. 
+
+
+![alt text](/assets/project2-10.png)
+
+
+### Key Learnings and Wins
+
+I believe that getting a working functioning APP using React for the first time within the 48 hour timeframe was a big success. We also had to improvise a shaky API by integrating a for loop, and importing a function that would improve readability. 
+
+I was also pleased with how the site looked visually, the site looks clean and easy to use. Finally I think our pair coding and teamwork were good, and it was a pleasure working with Ali. I regularly use the APP on my phone to check crypto currency prices.
+
+Future Improvements
+
+We could use a more reliable API and also import more information from other API’s to expand our site and include more information from each crypto currency. The idea of the App was to allow access to price information easily and quickly, therefore I wouldn't change too much else. 
 
 
