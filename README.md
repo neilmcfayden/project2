@@ -98,4 +98,3 @@ Future Improvements
 
 We could use a more reliable API and also import more information from other API’s to expand our site and include more information from each crypto currency. The idea of the App was to allow access to price information easily and quickly, therefore I wouldn't change too much else. 
 
-
